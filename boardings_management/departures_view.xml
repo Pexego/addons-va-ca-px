@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+
+        <record id="view_departure_type_tree" model="ir.ui.view">
+             <field name="name">departure.type.tree</field>
+            <field name="model">departure.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Departures types">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_departure_type_form" model="ir.ui.view">
+            <field name="name">departure.type.form</field>
+            <field name="model">departure.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Departures types">
+                    <group col="6" colspan="4">
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_departure_type_filter" model="ir.ui.view">
+            <field name="name">departure.type.list.select</field>
+            <field name="model">departure.type</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Departures types">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_view_departure_type_form" model="ir.actions.act_window">
+            <field name="name">Departures types</field>
+            <field name="res_model">departure.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</openerp>

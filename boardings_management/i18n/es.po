@@ -1,0 +1,704 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* boardings_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-06 09:32+0000\n"
+"PO-Revision-Date: 2013-09-06 09:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: boardings_management
+#: field:excel.upload,colUOport:0
+msgid "Columna U. Org. Puerto"
+msgstr "Columna U. Org. Puerto"
+
+#. module: boardings_management
+#: view:dua.summary.wizard:0
+msgid "Dua Summary Data"
+msgstr "Dua Summary Data"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_identificative_document
+msgid "Identificative document"
+msgstr "Documento identificativo"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.act_manifest_wizard
+msgid "Manifiest"
+msgstr "Manifiest"
+
+#. module: boardings_management
+#: view:packaging.type:0
+msgid "Search Packagings types"
+msgstr "Buscar Tipo Embalaje"
+
+#. module: boardings_management
+#: view:boat:0
+#: view:identificative.document:0
+#: view:port:0
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Situation"
+msgstr "Situación"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: field:identificative.document,name:0
+msgid "Document"
+msgstr "Documento"
+
+#. module: boardings_management
+#: view:situation.types:0
+msgid "Situations types"
+msgstr "Situaciones de embarque"
+
+#. module: boardings_management
+#: field:excel.upload,colMarca:0
+msgid "Columna Marca"
+msgstr "Columna Marca"
+
+#. module: boardings_management
+#: field:excel.upload,colSTC:0
+msgid "Columna STC"
+msgstr "Columna STC"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Arrival Date"
+msgstr "Fecha de llegada"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Sit. boarding"
+msgstr "Sit. embarque"
+
+#. module: boardings_management
+#: view:vehicle.type:0
+msgid "Search Vehicles types"
+msgstr "Buscar tipos de vehículos"
+
+#. module: boardings_management
+#: field:identificative.document,measures:0
+msgid "Measures"
+msgstr "Medidas"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_analytic_data
+msgid "Statistics of documents ports and organization units ports"
+msgstr "Datos de los documentos, puertos y sus unidades aorganizativas"
+
+#. module: boardings_management
+#: field:dua.summary.wizard,travel:0
+msgid "Travel"
+msgstr "Travel"
+
+#. module: boardings_management
+#: view:multi.records.management:0
+msgid "Ok"
+msgstr "Actualizar"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_ou_ports
+msgid "Org. Unit Port (open space)"
+msgstr "Unidad Org. de Puerto (campa)"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.act_dua_summary_wizard
+msgid "Dua Summary"
+msgstr "Dua Summary"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.action_view_vehicle_type_form
+#: model:ir.ui.menu,name:boardings_management.menu_vehicles
+msgid "Vehicles"
+msgstr "Vehículos"
+
+#. module: boardings_management
+#: field:multi.records.management,doc_ids_str:0
+msgid "Doc ids"
+msgstr "Doc ids"
+
+#. module: boardings_management
+#: view:dua.summary.wizard:0
+msgid "Manifiest Data"
+msgstr "Manifiest Data"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_ports
+#: view:port:0
+msgid "Ports"
+msgstr "Puertos"
+
+#. module: boardings_management
+#: field:dua.summary.wizard,out_port:0
+msgid "Out Port"
+msgstr "Purto salida"
+
+#. module: boardings_management
+#: field:excel.upload,colHH:0
+msgid "Columna HH"
+msgstr "Columna HH"
+
+#. module: boardings_management
+#: field:excel.upload,colPU:0
+msgid "Columna PU"
+msgstr "Columna PU"
+
+#. module: boardings_management
+#: view:situation.types:0
+msgid "Search Situations typess"
+msgstr "Buscar situaciones de embarque"
+
+#. module: boardings_management
+#: field:packaging.type,name:0
+msgid "Abbreviation"
+msgstr "Abreviatura"
+
+#. module: boardings_management
+#: model:res.groups,name:boardings_management.group_boarding_management_manager
+msgid "Boarding Management manager"
+msgstr "Gestión de embarques Manager"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_base_boardings_management
+msgid "Boardings management"
+msgstr "Gestión de embarques"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.action_view_port_form
+msgid "ports"
+msgstr "Puertos"
+
+#. module: boardings_management
+#: view:vehicle.type:0
+msgid "Vehicles types"
+msgstr "Tipos de Vehículos"
+
+#. module: boardings_management
+#: field:identificative.document,arrival_date:0
+msgid "Arrival date"
+msgstr "Fecha de llegada"
+
+#. module: boardings_management
+#: field:identificative.document,ou_port_id:0
+#: model:ir.actions.act_window,name:boardings_management.action_view_ou_port_form
+#: field:multi.records.management,ou_port_id:0
+msgid "Org. Unit Port"
+msgstr "Unidad Org. de Puerto"
+
+#. module: boardings_management
+#: view:ou.port:0
+msgid "Organizational Unit of the Port (open space)"
+msgstr "Unidad Organizativa de Puerto (campa)"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: boardings_management
+#: view:departure.type:0
+#: model:ir.actions.act_window,name:boardings_management.action_view_departure_type_form
+#: model:ir.model,name:boardings_management.model_departure_type
+msgid "Departures types"
+msgstr "Partidas"
+
+#. module: boardings_management
+#: field:excel.upload,colPeso:0
+msgid "Columna Peso"
+msgstr "Columna Peso"
+
+#. module: boardings_management
+#: view:boat:0
+#: model:ir.actions.act_window,name:boardings_management.action_view_boat_form
+#: model:ir.ui.menu,name:boardings_management.menu_boats
+msgid "Boats"
+msgstr "Barcos"
+
+#. module: boardings_management
+#: field:excel.upload,colMedidas:0
+msgid "Columna Medidas"
+msgstr "Columna Medidas"
+
+#. module: boardings_management
+#: model:res.groups,name:boardings_management.group_boarding_management_user
+msgid "Boarding Management user"
+msgstr "Gestión de embarques Usuario"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_document_type
+msgid "Document type"
+msgstr "Tipo de documento"
+
+#. module: boardings_management
+#: view:boat:0
+msgid "Search Boats"
+msgstr "Buscar barcos"
+
+#. module: boardings_management
+#: field:excel.upload,colNumerodocumento:0
+msgid "Columna Tipo Documento"
+msgstr "Columna Tipo Documento"
+
+#. module: boardings_management
+#: field:excel.upload,filaIni:0
+msgid "Fila en la que se comienza la Lectura"
+msgstr "Fila en la que se comienza la Lectura"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: boardings_management
+#: field:excel.upload,colChasis:0
+msgid "Columna Chasis"
+msgstr "Columna Chasis"
+
+#. module: boardings_management
+#: view:port:0
+msgid "Search Ports"
+msgstr "Buscar puertos"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_situation_types
+msgid "Situation types"
+msgstr "Situaciones de embarque"
+
+#. module: boardings_management
+#: view:document.type:0
+#: model:ir.actions.act_window,name:boardings_management.action_view_document_type_form
+msgid "Documents types"
+msgstr "Tipos de documentos"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Departure"
+msgstr "Partida"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.action_excel_upload
+msgid "Upload"
+msgstr "Subir Fichero"
+
+#. module: boardings_management
+#: field:excel.upload,colSituacionEmbarque:0
+msgid "Columna Situacion Embarque"
+msgstr "Columna Situacion Embarque"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Especifications"
+msgstr "Especificaciones"
+
+#. module: boardings_management
+#: field:identificative.document,weight:0
+msgid "Weight"
+msgstr "Peso"
+
+#. module: boardings_management
+#: field:identificative.document,packaging:0
+#: model:ir.ui.menu,name:boardings_management.menu_packaging
+msgid "Packaging"
+msgstr "Embalaje"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: field:identificative.document,boat_id:0
+#: model:ir.model,name:boardings_management.model_boat
+#: field:multi.records.management,boat_id:0
+msgid "Boat"
+msgstr "Barco"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Boarding Date"
+msgstr "Fecha de embarque"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "D. Boarding"
+msgstr "F. Embarque"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_vehicle_type
+msgid "Vehicle Type"
+msgstr "Tipo de vehículo"
+
+#. module: boardings_management
+#: view:ou.port:0
+msgid "Search Organizational Unit of the Port (open space)"
+msgstr "Buscar Unidad Organizativa de Puerto (campa)"
+
+#. module: boardings_management
+#: field:identificative.document,dep_type_id:0
+#: field:multi.records.management,dep_type_id:0
+msgid "Departure type"
+msgstr "Tipo de partida"
+
+#. module: boardings_management
+#: field:excel.upload,filaFin:0
+msgid "Fila en la que finaliza la Lectura"
+msgstr "Fila en la que finaliza la Lectura"
+
+#. module: boardings_management
+#: field:excel.upload,FechaCarga:0
+msgid "FechaCarga"
+msgstr "FechaCarga"
+
+#. module: boardings_management
+#: field:boat,logo_shipping_company:0
+msgid "Logo Shipping Company"
+msgstr "Logo Naviera"
+
+#. module: boardings_management
+#: field:excel.upload,colDocumento:0
+msgid "Columna Documento"
+msgstr "Columna Documento"
+
+#. module: boardings_management
+#: field:excel.upload,colCar:0
+msgid "Columna CAR"
+msgstr "Columna CAR"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: model:ir.actions.act_window,name:boardings_management.action_view_identificative_document_form
+msgid "Identificative Documents"
+msgstr "Documentos identificativos"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_ou_port
+msgid "Organizational Unit of the Port"
+msgstr "Unidad Organizativa de Puerto"
+
+#. module: boardings_management
+#: view:document.type:0
+msgid "Search Documents types"
+msgstr "Buscar tipos de documento"
+
+#. module: boardings_management
+#: field:ou.port,name:0
+msgid "Denomination"
+msgstr "Denominación"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_departures
+msgid "Departures"
+msgstr "Partidas"
+
+#. module: boardings_management
+#: field:identificative.document,trademark:0
+msgid "Trademark"
+msgstr "Marca"
+
+#. module: boardings_management
+#: view:excel.upload:0
+msgid "Cargar Fichero"
+msgstr "Cargar Fichero"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_excel_upload
+msgid "excel.upload"
+msgstr "excel.upload"
+
+#. module: boardings_management
+#: help:excel.upload,FechaCarga:0
+msgid "Fecha de carga"
+msgstr "Fecha de carga"
+
+#. module: boardings_management
+#: field:departure.type,name:0
+#: field:document.type,name:0
+#: field:vehicle.type,name:0
+msgid "Definition"
+msgstr "Definición"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Search Identificatives Documents"
+msgstr "Buscar documentos identificativos"
+
+#. module: boardings_management
+#: field:excel.upload,idUsr:0
+msgid "idUsr"
+msgstr "idUsr"
+
+#. module: boardings_management
+#: field:excel.upload,colEmbalaje:0
+msgid "Columna Embalaje"
+msgstr "Columna Embalaje"
+
+#. module: boardings_management
+#: field:excel.upload,colFechaLlegada:0
+msgid "Columna Fecha de Llegada"
+msgstr "Columna Fecha de Llegada"
+
+#. module: boardings_management
+#: field:identificative.document,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: boardings_management
+#: field:identificative.document,boarding_date:0
+#: field:multi.records.management,boarding_date:0
+msgid "Boarding date"
+msgstr "Fecha de embarque"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_multi_records_management
+msgid "multi.records.management"
+msgstr "multi.records.management"
+
+#. module: boardings_management
+#: field:excel.upload,colPartida:0
+msgid "Columna Partida"
+msgstr "Columna Partida"
+
+#. module: boardings_management
+#: field:dua.summary.wizard,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: boardings_management
+#: view:boat:0
+#: field:boat,features:0
+msgid "Features"
+msgstr "Características"
+
+#. module: boardings_management
+#: model:ir.actions.report.xml,name:boardings_management.aeroo_informe_resumen_dua_report
+msgid "Dua report"
+msgstr "Informe DUA"
+
+#. module: boardings_management
+#: view:departure.type:0
+msgid "Search Departures types"
+msgstr "Buscar tipos de partidas"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "U. Org."
+msgstr "U. Org."
+
+#. module: boardings_management
+#: view:excel.upload:0
+msgid "Importar Excel"
+msgstr "Importar Excel"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Document date"
+msgstr "Fecha documento"
+
+#. module: boardings_management
+#: field:excel.upload,colFechaDocumento:0
+msgid "Fecha de Documento"
+msgstr "Fecha de Documento"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_excel_upload
+msgid "Cargar Excel"
+msgstr "Cargar Excel"
+
+#. module: boardings_management
+#: view:dua.summary.wizard:0
+#: view:multi.records.management:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_dua_summary_wizard
+msgid "dua.summary.wizard"
+msgstr "dua.summary.wizard"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_identificative_documents
+msgid "Identificatives documents"
+msgstr "Documentos identificativos"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "D. Arrival"
+msgstr "F. Llegada"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Information"
+msgstr "Información"
+
+#. module: boardings_management
+#: field:identificative.document,situation_id:0
+#: field:multi.records.management,situation_id:0
+msgid "Boarding situation"
+msgstr "Situación de embarque"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_documents_types
+msgid "Document types"
+msgstr "Tipos de documentos"
+
+#. module: boardings_management
+#: view:dua.summary.wizard:0
+msgid "Print"
+msgstr "Print"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.action_view_packaging_type_form
+#: view:packaging.type:0
+msgid "Packagings types"
+msgstr "Tipos embalajes"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: field:identificative.document,observations:0
+msgid "Observations"
+msgstr "Observaciones"
+
+#. module: boardings_management
+#: field:packaging.type,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: boardings_management
+#: field:identificative.document,ou_port_ids_str:0
+#: field:multi.records.management,ou_port_ids_str:0
+msgid "Ou port str"
+msgstr "Ou port str"
+
+#. module: boardings_management
+#: field:identificative.document,doc_type_id:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.act_multi_records_management
+#: view:multi.records.management:0
+msgid "Multi records management"
+msgstr "Gestionar múltiples registros"
+
+#. module: boardings_management
+#: field:identificative.document,chassis:0
+msgid "Chassis"
+msgstr "Chasis"
+
+#. module: boardings_management
+#: field:identificative.document,units:0
+msgid "Units"
+msgstr "Unidades"
+
+#. module: boardings_management
+#: model:ir.actions.act_window,name:boardings_management.action_view_situation_types_form
+msgid "Boardings situations"
+msgstr "Situaciones de embarque"
+
+#. module: boardings_management
+#: model:ir.actions.report.xml,name:boardings_management.aeroo_informe_manifiesto_report2
+msgid "Manifiesto report"
+msgstr "Informe Manifiesto"
+
+#. module: boardings_management
+#: field:boat,name:0
+#: field:port,name:0
+#: field:situation.types,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: boardings_management
+#: help:excel.upload,idUsr:0
+msgid "Usuario"
+msgstr "Usuario"
+
+#. module: boardings_management
+#: view:port:0
+#: field:port,country_id:0
+msgid "Country"
+msgstr "País"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "Packaging type"
+msgstr "Tipo embalaje"
+
+#. module: boardings_management
+#: view:identificative.document:0
+msgid "UO Port"
+msgstr "Unidad Org. Puerto"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: field:identificative.document,veh_type_id:0
+msgid "Vehicle type"
+msgstr "Tipo vehículo"
+
+#. module: boardings_management
+#: view:boat:0
+msgid "Logo shipping company"
+msgstr "Logo Naviera"
+
+#. module: boardings_management
+#: field:identificative.document,model:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: boardings_management
+#: view:boat:0
+msgid "Shipping Company"
+msgstr "Naviera"
+
+#. module: boardings_management
+#: field:excel.upload,colModelo:0
+msgid "Columna Modelo"
+msgstr "Columna Modelo"
+
+#. module: boardings_management
+#: model:ir.ui.menu,name:boardings_management.menu_situation
+msgid "Boardings situation"
+msgstr "Situaciones de embarque"
+
+#. module: boardings_management
+#: field:identificative.document,document:0
+msgid "Document Number"
+msgstr "Numero documento"
+
+#. module: boardings_management
+#: model:ir.model,name:boardings_management.model_packaging_type
+msgid "packaging.type"
+msgstr "packaging.type"
+
+#. module: boardings_management
+#: field:excel.upload,ficheroUp:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: boardings_management
+#: field:excel.upload,hoja:0
+#: help:excel.upload,hoja:0
+msgid "Hoja del libro en la que debe hacerse la lectura"
+msgstr "Hoja del libro en la que debe hacerse la lectura"
+
+#. module: boardings_management
+#: view:identificative.document:0
+#: field:identificative.document,port_id:0
+#: model:ir.model,name:boardings_management.model_port
+#: field:multi.records.management,port_id:0
+#: field:ou.port,port_id:0
+msgid "Port"
+msgstr "Puerto"
+
+#. module: boardings_management
+#: field:boat,shipping_company:0
+msgid "Shipping company"
+msgstr "Naviera"
+

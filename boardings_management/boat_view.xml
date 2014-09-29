@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+
+        <record id="view_boat_tree" model="ir.ui.view">
+             <field name="name">boat.tree</field>
+            <field name="model">boat</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Boats">
+                    <field name="name"/>
+                    <field name="shipping_company"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_boat_form" model="ir.ui.view">
+            <field name="name">boat.form</field>
+            <field name="model">boat</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Boats">
+                    <group col="6" colspan="4">
+                        <group col="4" colspan="4">
+                            <field name="name" colspan="2"/>
+                            <separator string="Logo shipping company" colspan="2"/>
+                            <field name="shipping_company" colspan="2"/>
+                            <field name="logo_shipping_company" widget="image" nolabel="1" colspan="2"/>
+                        </group>
+                        <newline/>
+                        <separator string="Features" colspan="4"/>
+                        <field name="features" nolabel="1" colspan="4"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_boat_filter" model="ir.ui.view">
+            <field name="name">boat.list.select</field>
+            <field name="model">boat</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Boats">
+                    <field name="name"/>
+                    <field name="shipping_company"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Shipping Company" icon="terp-go-home" domain="[]" context="{'group_by':'shipping_company'}"/>
+                    </group>
+              </search>
+            </field>
+        </record>
+
+        <record id="action_view_boat_form" model="ir.actions.act_window">
+            <field name="name">Boats</field>
+            <field name="res_model">boat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</openerp>

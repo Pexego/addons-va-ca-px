@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <act_window name="Multi records management"
+            res_model="multi.records.management"
+            src_model="identificative.document"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_multi_records_management"/>
+
+        <act_window name="Dua Summary"
+            res_model="dua.summary.wizard"
+            src_model="identificative.document"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_dua_summary_wizard"
+            view_id="view_dua_summary_wizard"/>
+
+        <act_window name="Manifiest"
+            res_model="dua.summary.wizard"
+            src_model="identificative.document"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_manifest_wizard"
+            view_id="view_manifiest_wizard"/>
+    </data>
+</openerp>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <record id="view_mult_records_management_wizard" model="ir.ui.view">
+            <field name="name">Multi records management</field>
+            <field name="model">multi.records.management</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Multi records management">
+                    <field name="ou_port_ids_str" invisible="1"/>
+                    <field name="boarding_date"/>
+                    <field name="boat_id"/>
+                    <field name="port_id" on_change="onchange_port_id(port_id)"/>
+                    <field name="ou_port_id"  domain="[('port_id','in',[ou_port_ids_str.split('/')])]"  context="{'default_port_id': port_id}" attrs="{'readonly': [('port_id','=', False)]}"/>
+                    <field name="dep_type_id"/>
+                    <field name="situation_id"/>
+                    <field name="doc_ids_str" invisible="1"/>
+                    <newline/>
+                    <separator string="" colspan="4" />
+                    <label string="" colspan="2" />
+                    <group col="2" colspan="1">
+                        <button icon='gtk-cancel' special="cancel"
+                            string="Cancel" />
+                        <button name="update_docs" string="Ok"
+                            colspan="1" type="object" icon="gtk-ok" />
+                    </group>
+                </form>
+            </field>
+        </record>
+     </data>
+</openerp>

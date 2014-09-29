@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+ 
+    <!-- Basic Menu -->
+
+        <menuitem
+            id="menu_base_boardings_management"
+            name="Boardings management"
+            icon="terp-gtk-select-all"
+            sequence="7"
+            web_icon="images/boarding_management.png"
+            web_icon_hover="images/boarding_management_color.png"
+        />
+
+
+    <!-- Identificative Documents -->
+
+        <menuitem
+            id="menu_identificative_documents"
+            name="Identificatives documents"
+            parent="menu_base_boardings_management"
+            action="action_view_identificative_document_form"
+            sequence="1"
+        />
+
+    <!-- Excel treatment -->
+
+        <menuitem
+            name="Cargar Excel"
+            id="menu_excel_upload"
+            action="action_excel_upload"
+            parent="menu_base_boardings_management"
+            sequence="2"
+        />
+
+    <!-- Configuration -->
+
+        <menuitem
+            id="menu_configuration"
+            name="Configuration"
+            parent="menu_base_boardings_management"
+            sequence="3"
+        />
+
+    <!-- Configuration: Document Types -->
+
+        <menuitem
+            id="menu_documents_types"
+            name="Document types"
+            parent="menu_configuration"
+            action="action_view_document_type_form"
+            sequence="1"
+        />
+
+    <!-- Configuration: Departures -->
+
+        <menuitem
+            id="menu_departures"
+            name="Departures"
+            parent="menu_configuration"
+            action="action_view_departure_type_form"
+            sequence="2"
+        />
+
+    <!-- Configuration: Boats -->
+
+        <menuitem
+            id="menu_boats"
+            name="Boats"
+            parent="menu_configuration"
+            action="action_view_boat_form"
+            sequence="3"
+        />
+
+    <!-- Configuration: Org. Unit Port -->
+
+        <menuitem
+            id="menu_ou_ports"
+            name="Org. Unit Port (open space)"
+            parent="menu_configuration"
+            action="action_view_ou_port_form"
+            sequence="4"
+        />
+
+    <!-- Configuration: Ports -->
+
+        <menuitem
+            id="menu_ports"
+            name="Ports"
+            parent="menu_configuration"
+            action="action_view_port_form"
+            sequence="5"
+        />
+        
+    <!-- Configuration: Boardings Situations -->
+
+        <menuitem
+            id="menu_situation"
+            name="Boardings situation"
+            parent="menu_configuration"
+            action="action_view_situation_types_form"
+            sequence="6"
+        />
+
+    <!-- Configuration: Vehicles -->
+
+        <menuitem
+            id="menu_vehicles"
+            name="Vehicles"
+            parent="menu_configuration"
+            action="action_view_vehicle_type_form"
+            sequence="7"
+        />
+     
+     <!-- Configuration: Packaging -->
+
+        <menuitem
+            id="menu_packaging"
+            name="Packaging"
+            parent="menu_configuration"
+            action="action_view_packaging_type_form"
+            sequence="8"
+        />
+
+    </data>
+</openerp>      

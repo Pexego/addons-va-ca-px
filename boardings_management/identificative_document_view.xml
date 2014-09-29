@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <record id="view_document_type_tree" model="ir.ui.view">
+             <field name="name">document.type.tree</field>
+            <field name="model">document.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Documents types">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_document_type_form" model="ir.ui.view">
+            <field name="name">document.type.form</field>
+            <field name="model">document.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Documents types">
+                    <group col="6" colspan="4">
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_document_type_filter" model="ir.ui.view">
+            <field name="name">document.type.list.select</field>
+            <field name="model">document.type</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Documents types">
+                    <field name="name"/>
+                    <newline/>
+              </search>
+            </field>
+        </record>
+
+        <record id="action_view_document_type_form" model="ir.actions.act_window">
+            <field name="name">Documents types</field>
+            <field name="res_model">document.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="view_packaging_type_tree" model="ir.ui.view">
+             <field name="name">packaging.type.tree</field>
+            <field name="model">packaging.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Packagings types">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_packaging_type_form" model="ir.ui.view">
+            <field name="name">packaging.type.form</field>
+            <field name="model">packaging.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Packagings types">
+                    <group col="6" colspan="4">
+                        <group col="4" colspan="4">
+                             <field name="name"/>
+                             <field name="description"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_packaging_type_filter" model="ir.ui.view">
+            <field name="name">packaging.type.list.select</field>
+            <field name="model">packaging.type</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Packagings types">
+                    <field name="name"/>
+
+                </search>
+            </field>
+        </record>
+
+        <record id="action_view_packaging_type_form" model="ir.actions.act_window">
+            <field name="name">Packagings types</field>
+            <field name="res_model">packaging.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="view_identificative_documents_tree" model="ir.ui.view">
+             <field name="name">identificative.documents.tree</field>
+            <field name="model">identificative.document</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Identificative Documents">
+                    <field name="name"/>
+                    <field name="chassis"/>
+                    <field name="doc_type_id" invisible="1"/>
+                    <field name="port_id"/>
+                    <field name="ou_port_id" string="U. Org."/>
+                    <field name="date" invisible="1"/>
+                    <field name="arrival_date" string="D. Arrival"/>
+                    <field name="boarding_date" string="D. Boarding"/>
+                    <field name="situation_id" string="Sit. boarding"/>
+                    <field name="boat_id"/>
+                    <field name="trademark"/>
+                    <field name="veh_type_id" string="Vehicle type"/>
+                    <field name="dep_type_id" string="Departure"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_identificative_document_form" model="ir.ui.view">
+            <field name="name">identificative.document.form</field>
+            <field name="model">identificative.document</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Identificative Documents">
+                    <group col="8" colspan="4">
+                        <group colspan="4" col="4">
+                            <field name="name" />
+                        </group>
+                        <group colspan="1" col="2">
+                            <field name="document"/>
+                        </group>
+                         <group colspan="2" col="2">
+                            <field name="date" string="Document date"/>
+                            <field name="arrival_date"/>
+                            <field name="boarding_date"/>
+                         </group>
+                    </group>
+                    <group col="4" colspan="4">
+                        <group colspan="4" col="4">
+                            <separator string="Information" colspan="4"/>
+                            <field name="ou_port_ids_str" invisible="1"/>
+                            <field name="port_id" on_change="onchange_port_id(port_id)"/>
+                            <field name="ou_port_id"  domain="[('port_id','in',[ou_port_ids_str.split('/')])]" context="{'default_port_id': port_id}"/>
+                            
+                            <field name="veh_type_id"/>
+                            <field name="dep_type_id" string="Departure"/>
+                            <field name="situation_id" widget="selection"/>
+                            <field name="boat_id"/>
+                            <field name="packaging" string="Packaging type" widget="selection"/>
+                        </group>
+                    </group>
+                    <group colspan="4" col="6">
+                        <separator string="Especifications" colspan="4"/>
+                        <newline/>
+                        <field name="units"/>
+                        <field name="model"/>
+                        <newline/>
+                        <field name="weight"/>
+                        <field name="measures"/>
+                        <newline/>
+                        <field name="chassis"/>
+                        <field name="trademark"/>
+                    </group>
+                    <group colspan="4">
+                        <separator string="Observations"/>
+                        <field name="observations" colspan="4" nolabel="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_identificative_document_filter" model="ir.ui.view">
+            <field name="name">identificative.document.list.select</field>
+            <field name="model">identificative.document</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Identificatives Documents">
+                    <field name="name"/>
+                    
+                    <field name="veh_type_id" widget="selection"/>
+                    <field name="dep_type_id" widget="selection"/>
+                    <field name="boat_id" widget="selection"/>
+                    <field name="situation_id" widget="selection"/>
+                    <newline/>
+                    <field name="date"/>
+                    <field name="arrival_date"/>
+                    <field name="boarding_date"/>
+                    <field name="ou_port_id"/>
+                    <field name="port_id"/>
+                    <newline/>
+                    <group expand="1" string="Group By...">
+                        <filter string="Document" icon="terp-folder-orange" domain="[]" context="{'group_by':'doc_type_id'}"/>
+                        <filter string="Vehicle" icon="terp-folder-blue" domain="[]" context="{'group_by':'veh_type_id'}"/>
+                        <filter string="Departure" icon="terp-folder-yellow" domain="[]" context="{'group_by':'dep_type_id'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Boat" icon="terp-folder-green" domain="[]" context="{'group_by':'boat_id'}"/>
+                        <filter string="Port" icon="terp-folder-violet" domain="[]" context="{'group_by':'port_id'}"/>
+                        <filter string="UO Port" icon="terp-hr" domain="[]" context="{'group_by':'ou_port_id'}"/>
+                        <filter string="Situation" icon="terp-tools" domain="[]" context="{'group_by':'situation_id'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Document date" icon="terp-calendar" domain="[]" context="{'group_by':'date'}"/>
+                        <filter string="Arrival Date" icon="terp-calendar" domain="[]" context="{'group_by':'arrival_date'}"/>
+                        <filter string="Boarding Date" icon="terp-calendar" domain="[]" context="{'group_by':'boarding_date'}"/>
+                    </group>
+              </search>
+            </field>
+        </record>
+
+        <record id="action_view_identificative_document_form" model="ir.actions.act_window">
+            <field name="name">Identificative Documents</field>
+            <field name="res_model">identificative.document</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="excel_upload_form">
+            <field name="name">Formulario Upload</field>
+            <field name="model">excel.upload</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Cargar Fichero">
+                    <notebook colspan="1">
+                        <page string="Cargar Fichero">
+                            <field name="hoja"/>
+                            <newline />
+                            <field name="filaIni"/>
+                            <newline/>
+                            <field name="filaFin"/>
+                            <newline/>
+                            <field name="colUOport"/>
+                            <newline />
+                            <field name="colFechaLlegada"/>
+                            <newline />
+                            <field name="colDocumento"/>
+                            <newline />
+                            <field name="colFechaDocumento"/>
+                            <newline />
+                            <field name="colNumerodocumento"/>
+                            <newline />
+                            <field name="colSituacionEmbarque"/>
+                            <newline/>
+                            <field name="colChasis"/>
+                            <newline />
+                            <field name="colMarca"/>
+                            <newline />
+                            <field name="colModelo"/>
+                            <newline />
+                            <field name="colCar"/>
+                            <newline />
+                            <field name="colPU"/>
+                            <newline />
+                            <field name="colHH"/>
+                            <newline />
+                            <field name="colSTC"/>
+                            <newline />
+                            <field name="colEmbalaje"/>
+                            <newline />
+                            <field name="colPartida"/>
+                            <newline />
+                            <field name="colPeso"/>
+                            <newline/>
+                            <field name="colMedidas"/>
+                            <newline />
+                            <field name="ficheroUp"/>
+                            <button name="import_file" string="Importar Excel" type="object" icon="gtk-execute"/>
+                        </page>
+                    </notebook>
+		</form>
+            </field>
+	</record>
+
+        <record model="ir.actions.act_window" id="action_excel_upload">
+            <field name="name">Upload</field>
+            <field name="res_model">excel.upload</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+	</record>
+
+    </data>
+</openerp>
+

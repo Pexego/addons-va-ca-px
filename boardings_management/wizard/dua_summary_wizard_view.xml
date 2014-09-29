@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <record id="view_dua_summary_wizard" model="ir.ui.view">
+            <field name="name">Dua Summary</field>
+            <field name="model">dua.summary.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Dua Summary Data">
+                    
+                    <!-- <field name="boarding_date"/>
+                    <field name="boat_id"/> -->
+                    <field name="out_port"/>
+                    <field name="travel"/>
+                    <field name="code"/>
+                   <!--  <button icon='gtk-cancel' special="cancel" string="Cancel" />
+                    <button name="print_dua_summary" string="Print Dua summary" type="object" icon="gtk-ok" /> -->
+                    <newline/>
+                    <separator string="" colspan="4" />
+                    <label string="" colspan="2" />
+                    <group col="2" colspan="1">
+                        <button icon='gtk-cancel' special="cancel"
+                            string="Cancel" />
+                        <button name="print_dua_summary" string="Print"
+                            colspan="1" type="object" icon="gtk-print" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_manifiest_wizard" model="ir.ui.view">
+            <field name="name">Manifiest Report</field>
+            <field name="model">dua.summary.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Manifiest Data">
+                    
+                    <!-- <field name="boarding_date"/>
+                    <field name="boat_id"/> -->
+                    <field name="out_port"/>
+                    <field name="travel"/>
+                    <field name="code"/>
+                   <!--  <button icon='gtk-cancel' special="cancel" string="Cancel" />
+                    <button name="print_dua_summary" string="Print Dua summary" type="object" icon="gtk-ok" /> -->
+                    <newline/>
+                    <separator string="" colspan="4" />
+                    <label string="" colspan="2" />
+                    <group col="2" colspan="1">
+                        <button icon='gtk-cancel' special="cancel"
+                            string="Cancel" />
+                        <button name="print_manifiest" string="Print"
+                            colspan="1" type="object" icon="gtk-print" />
+                    </group>
+                </form>
+            </field>
+        </record>
+     </data>
+</openerp>

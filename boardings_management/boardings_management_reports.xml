@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <!-- INFORME MANIFIESTO -->
+        <record id="aeroo_informe_manifiesto_report2" model="ir.actions.report.xml">
+            <field name="name">Manifiesto report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">identificative.document</field>
+            <field name="report_name">manifiesto_report</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo_ooo.report_mimetypes_xls_odt"/>
+            <field name="report_rml">boardings_management/reports/Informes_Manifiesto_Pexego.ods</field>
+            <field name="parser_state">loc</field>
+            <field name="parser_loc">boardings_management/parser_dua_summary.py</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <ir_set>
+            <field eval="'action'" name="key"/>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="'identificative.document'" name="models"/>
+            <field name="name">manifiesto_report</field>
+            <field eval="'ir.actions.report.xml,'+str(aeroo_informe_manifiesto_report2)" name="value"/>
+            <field eval="True" name="isobject"/>
+            <field eval="True" name="replace"/>
+        </ir_set>
+
+        <!-- INFORME RESUMEN DUA -->
+        <record id="aeroo_informe_resumen_dua_report" model="ir.actions.report.xml">
+            <field name="name">Dua report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">identificative.document</field>
+            <field name="report_name">resumen_dua</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo_ooo.report_mimetypes_xls_odt"/>
+            <field name="report_rml">boardings_management/reports/Informes_Resumen_Dua_Pexego.ods</field>
+            <field name="parser_state">loc</field>
+            <field name="parser_loc">boardings_management/parser_dua_summary.py</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <ir_set>
+            <field eval="'action'" name="key"/>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="'identificative.document'" name="models"/>
+            <field name="name">resumen_dua_report</field>
+            <field eval="'ir.actions.report.xml,'+str(aeroo_informe_resumen_dua_report)" name="value"/>
+            <field eval="True" name="isobject"/>
+            <field eval="True" name="replace"/>
+        </ir_set>
+
+    </data>
+</openerp>
+

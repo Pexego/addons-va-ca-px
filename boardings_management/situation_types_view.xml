@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+
+        <record id="view_situation_types_tree" model="ir.ui.view">
+             <field name="name">situation.types.tree</field>
+            <field name="model">situation.types</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Situations types">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_situation_types_form" model="ir.ui.view">
+            <field name="name">situation.types.form</field>
+            <field name="model">situation.types</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Situations types">
+                    <group col="6" colspan="4">
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_situation_types_filter" model="ir.ui.view">
+            <field name="name">situation.types.list.select</field>
+            <field name="model">situation.types</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Situations typess">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_view_situation_types_form" model="ir.actions.act_window">
+            <field name="name">Boardings situations</field>
+            <field name="res_model">situation.types</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</openerp>
